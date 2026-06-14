@@ -1,0 +1,49 @@
+Example Inputs and Outputs
+Email Text (Input)
+Output
+"Congratulations! You have won ₹50,000. Click here to claim now."
+Spam
+"Get a free iPhone today. Limited offer!"
+Spam
+"Dear customer, your account has been selected for a prize."
+Spam
+"Meeting scheduled for tomorrow at 10 AM."
+Not Spam
+"Please find the attached project report."
+Not Spam
+"Your order has been shipped and will arrive tomorrow."
+Not Spam
+Sample Test Inputs
+Plain text
+
+
+1. WINNER!! Claim your free vacation package now.
+2. Urgent! Update your bank details immediately.
+3. Hello Aadil, your assignment submission has been received.
+4. Team meeting postponed to Friday.
+5. Earn ₹10,000 per day working from home. Click now!
+6. Your OTP for login is 458921.
+7. Get 90% discount on all products today only.
+8. Happy Birthday! Wishing you a great year ahead.
+
+
+Expected Labels
+Plain text
+1. Spam
+2. Spam
+3. Not Spam
+4. Not Spam
+5. Spam
+6. Not Spam
+7. Spam
+8. Not Spam
+Python Input Example
+Python
+email = input("Enter email message: ")
+
+# Example
+# Input:
+# "Congratulations! You have won a free lottery ticket."
+
+# Output:
+# Spam
